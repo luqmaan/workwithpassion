@@ -1,0 +1,226 @@
+.hide {
+	display: none;
+}
+#container {
+	padding-bottom: 30px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-user-select: none;
+	height: 100%;
+}
+#header {
+	width: 100%;
+	background: #000000;
+	position: fixed;
+	display: block;
+	z-index:1000;
+	-webkit-box-shadow: 0 0px 15px #261301;
+	-moz-box-shadow: 0 0px 15px #261301;
+	box-shadow: 0 0px 15px #261301;
+}
+#hide-container {
+	display:none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	background: #000;
+	background: rgba(0, 0, 0, .7);
+}
+#header .logo {
+	background-color: #c31920;
+	float: left;
+}
+
+#header .logo img {
+	float: left;
+	padding: 9px 33px;
+}
+
+#header .menu li a {
+	float: left;
+	display: inline-block;
+	background: #262626;
+	font-weight: normal; 
+	font-size: 14px;
+	color: #cccccc;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 140px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 4px;	
+
+	font-family: PFDinTextPro-Regular;
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+#header .menu li a:hover {
+	color: #ffffff;
+}
+
+#header .menu li a.active {
+	font-family: 'LTCCaslon-Italic';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: lowercase;
+	font-size: 16px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	color: #ffffff;
+}
+
+@media all and (max-width: 570px) {
+
+	#header {
+		position: relative;
+		top: 0px;
+		text-align:center;
+	}
+	#container {
+		padding-top:100px;
+	}
+	#header .logo {
+		width: 100%;
+	}
+	#header .logo img {
+		float:none;
+	}
+	#header .menu li a {
+		margin-left: 0px;
+		border-bottom: 1px solid #000;
+		width:100%;
+	}
+}
+
+#contact {
+	/* js provides this div with starting height equal to window height */
+	background: #2c232b url('../images/standard/contact-bg.jpg') repeat-x;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	visibility: hidden;
+	color: #fff;
+	padding: 30px 0px;
+	box-shadow: inset 0px 20px 30px #150e08;
+	z-index: -100;
+}
+#contact span {
+	width: 200px;
+	float:left;
+	margin-right: 50px;
+}
+
+#contact .inner-wrapper {
+	width: 920px;
+	margin: auto;
+}
+#contact #social {
+	width: 120px;
+	margin-top: 25px;
+	text-align: center;	
+}
+#contact #social img {
+	margin: 4px;
+}
+#contact h3 {
+	font-family: 'LTCCaslon-Italic';
+	font-weight: normal;
+	font-style: normal;
+	text-transform: lowercase;
+	text-align: center;	
+	margin: 7px 0px;
+	border-bottom: 2px solid #fff;
+	font-size: 23px;
+	padding-bottom: 5px;
+}
+#contact p {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.5em;
+}
+#contact p a {
+	color: #fff;
+	text-decoration: none;
+}
+#contact-x {
+	float: left;
+	position: absolute;
+	cursor: pointer;
+}
+#contact-x:hover {
+	opacity: 0.7;
+}
+#contact #positions {
+	text-transform: uppercase;
+}
+#contact a.action {
+	color: #fff;
+	text-decoration: none;
+	font-family: PFDinTextPro-Regular;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 2px;
+	font-size: 15px;
+	margin-top: 10px;
+	display: inline-block;
+}
+#contact a.action:hover {
+	opacity: 0.7;
+}
+
+#contact a.action u {
+	text-decoration: none;
+	border-bottom: 1px solid #ec1c23;
+	padding-bottom: 3px;
+}
+/* @license
+ * MyFonts Webfont Build ID 2179749, 2012-03-27T16:22:36-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: LTC Caslon Regular by Lanston Type Company
+ * URL: http://www.myfonts.com/fonts/lanston/ltc-caslon/regular/
+ * Copyright: Copyright (c) Lanston Type Co.- P22 type foundry, 2005. All rights
+ * reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: PF Din Text Pro Regular by Parachute
+ * URL: http://www.myfonts.com/fonts/parachute/pf-din-text-pro/regular/
+ * Copyright: Copyright (c) 2002, 2005 Parachute&#x00A8;, www.parachute.gr.  All rights
+ * reserved.
+ * Licensed pageviews: unspecified
+ * 
+ * Webfont: PF Din Text Pro Bold by Parachute
+ * URL: http://www.myfonts.com/fonts/parachute/pf-din-text-pro/bold/
+ * Copyright: Copyright (c) 2002, 2005 Parachute&#x00A8;, www.parachute.gr.  All rights
+ * reserved.
+ * Licensed pageviews: unspecified
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2179749
+ * 
+ * Webfont: LTC Caslon Italic by Lanston Type Company
+ * URL: http://www.myfonts.com/fonts/lanston/ltc-caslon/italic/
+ * Copyright: Copyright (c) Lanston Type Co.- P22 type foundry, 2005. All rights
+ * reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2300112
+ * 
+ * © 2012 Bitstream Inc
+*/
+

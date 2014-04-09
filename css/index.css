@@ -1,0 +1,28 @@
+body {
+	background: url('../images/homepage/wood-bg.jpg') repeat center center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage/bg.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage/bg.jpg',sizingMethod='scale')";
+	overflow: hidden;
+}
+#container {
+	background: url('../images/homepage/wood-bg.jpg') repeat center center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage/bg.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage/bg.jpg',sizingMethod='scale')";
+	z-index: 9;
+}
+#home-page-wrapper {
+	z-index: 10;
+	max-width: 1900;
+	max-height: 1300; 
+	margin-left: auto; 
+	margin-right: auto; 
+	position: absolute;
+}
+#twitter { 
+	color: #ffffff;
+	font-size: 11px;
+	line-height: 1.2em;
+}
+#twitter a {
+	color: #fff;
+}

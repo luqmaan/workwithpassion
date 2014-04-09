@@ -1,0 +1,240 @@
+body {
+	font-size: 15px;
+	font-family: Helvetica;
+	filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+/* applies to GIF and PNG images; avoids blurry edges */
+
+img[src$=".gif"], img[src$=".png"] {
+   image-rendering: optimizequality;		  /* Webkit */
+   image-rendering: -moz-crisp-edges;         /* Firefox */
+   -ms-interpolation-mode: nearest-neighbor;  /* IE */
+}
+#passion, #passion #container {
+	background: url('../images/standard/work-bg.jpg') repeat;
+	color: #A7A9AC;
+}
+
+#work, #work #container {
+	background: url('../images/standard/work-bg.jpg') repeat;
+	color: #A7A9AC;
+}
+
+#accordion {
+	padding-top: 50px;
+}
+
+.title {
+	padding-top: 15px;
+	margin: 15px 30px;
+	cursor: pointer;
+	font-weight: normal;
+	font-style: normal;
+	font-family: PFDinTextPro-Regular;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.number, .number:hover {
+	color: #A7A9AC !important;
+}
+
+.title:hover{
+	color: #ffffff;
+}
+
+.active-title {
+	padding-top: 15px;
+	margin: 15px 30px;
+	cursor: pointer;
+	font-family: 'LTCCaslon-Italic';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	text-transform: lowercase;
+	color: #ffffff;
+}
+
+.number {
+	padding-top: 15px;
+	margin: 15px 40px 15px 0px;
+	cursor: pointer;
+	font-weight: normal;
+	font-style: normal;
+	font-family: LTCCaslonRegular;
+	font-size: 18px;
+}
+
+#work .title:not(:first-child), #work .active-title:not(:first-child) {
+	background: url(../images/standard/work-divider.png) repeat-x top;
+}
+
+#passion .title:not(:first-child), #passion .active-title:not(:first-child) {
+	background: url(../images/standard/work-divider.png) repeat-x top;
+}
+
+.slider {
+	width: 100%;
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	position: relative;
+	background: transparent url(../images/standard/ajax-loader-2.gif) no-repeat center center ;
+}
+
+.slider * {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-user-select: none
+}
+
+.dragbar {
+	display: block;
+	display:none;
+	font-size: 11px;
+	height: 3px;
+	margin:20px 0px 0px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	background-color: #ed1b30;
+	border: none;
+}
+
+#lff-title .dragbar {
+	background-color: #ed1b30;
+}
+
+#florida-title .dragbar {
+	background-color: #f79421;
+}
+
+#tour-title .dragbar {
+	background-color: #9ddc32;
+}
+
+#relaj-title .dragbar {
+	background-color: #ddfbfb;
+}
+
+#studios-title .dragbar {
+	background-color: #c31920;
+}
+
+#sweetbay-title .dragbar {
+	background-color: #fff450;
+}
+
+#bayfront-title .dragbar {
+	background-color: #0cb29c;
+}
+
+.ui-slider-handle {
+
+	background-image: url('../images/standard/drag-button.png');
+	display: block;
+	height: 38px;
+	left: 17%;
+	margin-bottom: 0px;
+	margin-left: -6px;
+	margin-right: 0px;
+	margin-top: 0px;
+	position: absolute;
+	top: -15px;
+	width: 38px;
+	z-index: 950 !important;
+
+}
+
+.inner {
+	height: 860px;
+	overflow: hidden !important;
+	z-index: 5;
+	position: relative;
+}
+
+.layer {
+	position: absolute;
+	top: 0px;
+	z-index: 20;
+	/* kill */
+	left: 30000px;
+}
+
+.layer img {
+	width: 100%;
+}
+
+#forced-images .layer {
+
+	position: relative;
+	top: auto;
+	left: auto;
+	
+}
+
+#forced-images span {
+	display:block;
+	float:left;
+	position: relative;
+	margin-right: 50px;
+}
+
+#forced-images span img {
+	width: 100%;
+}
+
+.slider-bg {
+	z-index: ;
+}
+
+.glow {
+	opacity: 0;
+}
+
+.slider #popup-ok {
+	cursor: pointer;
+}
+
+.instacontainer {
+	position: absolute;
+	background:  url(../images/standard/ajax-loader-grey.gif) no-repeat left center ;
+	min-height: 50px;
+	min-width: 50px;
+}
+
+.instagram {
+	position: relative;
+	margin-right:50px;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+
+#office .instagram {
+	padding: 63px 63px 41px 69px;
+	background: url('../images/office/00_frame.png') no-repeat top left;
+	background-size:100%;
+}
+
+#clock  {
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+}
+
+#clock .block {
+	position: relative;
+	display:block;
+	height: 198px;
+	line-height: 190px;
+	font-size:190px;
+	width: 750px;
+	padding-bottom:0px;
+	background: #F2F2F2;
+	margin-bottom: 25px;
+}
+#clock .layer .layer {
+	top: 0px;
+	left: 0px;
+}
